@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'CircularStd-Bold';
+  src: url('/CircularStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: url('/CircularStd-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CircularStd-Medium';
+  src: url('/CircularStd-Medium.otf') format('opentype');
+}
+
+.App-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.left-container {
+  margin-right: 1%;
+  justify-content: start;
+  align-items: start;
+}
+
+.app-title {
+  font-family: 'CircularStd-Bold';
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.picker-container {
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.picker-label {
+  display: flex;
+  margin: 20px 0 8px 0;
+  font-weight: bold;
+}
+
+.right-container {
+  margin: 1% 0 0 1%;
+}
+
+.logo-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.left-container, .card-container, .right-container {
+  display: inline-block;
+  vertical-align: top; 
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .App-container {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .left-container,
+  .card-container,
+  .right-container {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .app-title {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  .picker-label,
+  .logo-label {
+    margin: 15px 0 5px 0;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .app-title {
+    font-size: 2.2em;
+    margin: 15px 0;
+  }
+}
